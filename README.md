@@ -15,8 +15,7 @@ It uses the NOAA files verbatim.
 ![image](https://github.com/user-attachments/assets/b136454a-90dd-42a0-9ea3-34b316faf611)
 
 Example:
-
-'''
+```c
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -48,4 +47,4 @@ int main()
 	return 0;
 }
 
-'''
+```
