@@ -4,10 +4,11 @@ Test Code for the World Magnetic Model
 I had a requirement to encode NMEA string GPRMC which requires Magnetic Variation. 
 If MagVar is not available then it can be calculated using the World Magnetic Model managed by NOAA.
 https://www.ncei.noaa.gov/products/world-magnetic-model
+
 NOAA provides c source code and a coefficient file that can calculate the MagVar for a location at a specific time.
 The coefficient file is valid for 5 years 2015-2020, 2020-2025 etc.
 
-This project creates an API that returns the MagVar based on a Lat/Lon/Alt/Date.
+This project creates a small API that returns the MagVar based on a Lat/Lon/Alt/Date.
 It uses the NOAA files verbatim.
 
 
@@ -22,9 +23,6 @@ It uses the NOAA files verbatim.
 #include <stdlib.h>
 
 #include "bg_WMM.h"
-
-//#include "GeomagnetismHeader.h"
-//#include "EGM9615.h"
 
 double CalcMagVar(double lat, double lon, double HAE,int year, int month, int day);
 int InitWMM();
