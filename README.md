@@ -14,22 +14,15 @@ It uses the NOAA files verbatim.
 
 ![image](https://github.com/user-attachments/assets/b136454a-90dd-42a0-9ea3-34b316faf611)
 
+Example:
 
-'''c
-
+'''
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
 
 #include "bg_WMM.h"
-
-double CalcMagVar(double lat, double lon, double HAE,int year, int month, int day);
-int InitWMM();
-int DeInitWMM();
-#define WMM_ERR_NO_ERROR 0
-#define WMM_ERR_WMM_COF_NOT_FOUND 1
-#define WMM_ERR_DATE_CONVERSION_ERROR 2
 
 int main()
 {
